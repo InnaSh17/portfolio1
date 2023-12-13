@@ -1,0 +1,261 @@
+ body {
+   /* background-color: rgb(53, 50, 225);*/
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+#landscape {
+    background-image: url(winter-landscape-4532412_1920.jpg);
+   
+}
+#snow {
+  /* background-color: yellow;*/
+   
+}
+#snow .flake {
+    width: 20px;
+    height: 20px;
+    background-color:#fffA;
+    
+    border-radius: 100%;
+    position: absolute;
+    animation: fall 10s linear infinite;
+    font-size: 0;
+
+}
+#snow .flake.medium {
+    animation: fall 17s linear infinite;
+    height: 12px;
+    width: 12px;
+}
+#snow .flake.snow1 {
+   animation: fall 21s linear infinite;
+   height: 8px;
+   width: 8px; 
+}
+#snow .flake1 {
+    width:6px;
+    height: 6px;
+    background-color:rgba(158, 179, 251, 0.667);
+    
+    border-radius: 100%;
+    position: absolute;
+    animation: fall 8s linear infinite;
+    font-size: 0;
+
+ }
+ 
+#snow .flake:nth-child(1) {
+    left:15% ;
+    animation-delay: 4s;
+}
+#snow .flake:nth-child(2) {
+    left:55% ;
+    animation-delay: 8s;
+}
+#snow .flake:nth-child(3) {
+    left:20% ;
+    animation-delay: 1.5s;
+}
+#snow .flake:nth-child(4) {
+    left:70% ;
+    animation-delay: 3s;
+}
+#snow .flake:nth-child(5) {
+    left:25% ;
+    animation-delay: 2.5s;
+}
+#snow .flake:nth-child(6) {
+    left:5% ;
+    animation-delay: 2s;
+}
+#snow .flake:nth-child(7) {
+    left:90% ;
+    animation-delay: 5s;
+}
+#snow .flake.medium:nth-child(8) {
+    left:83% ;
+    animation-delay: 15s;
+}
+#snow .flake.medium:nth-child(9) {
+    left:57% ;
+    animation-delay: 15s;
+}
+#snow .flake.medium:nth-child(10) {
+    left:63% ;
+    animation-delay: 9.5s;
+}
+#snow .flake.medium:nth-child(11) {
+    left:53% ;
+    animation-delay: 4s;
+}
+#snow .flake.medium:nth-child(12) {
+    left:37% ;
+    animation-delay: 11.5s;
+}
+#snow .flake.medium:nth-child(13) {
+    left:60% ;
+    animation-delay: 12.1s;
+}
+#snow .flake.snow1:nth-child(14) {
+    background-image: url(snowflake.png);
+    left:55% ;
+    animation-delay: 7.6s;
+}
+#snow .flake.snow1:nth-child(15) {
+    background-image: url(snowflake.png);
+    left:30% ;
+    animation-delay: 3.9s;
+}
+#snow .flake.snow1:nth-child(16) {
+    background-image: url(snowflake.png);
+    left:40% ;
+    animation-delay: 7.7s;
+}
+#snow .flake.snow1:nth-child(17) {
+    background-image: url(snowflake.png);
+    left:50% ;
+    animation-delay: 14s;
+}
+#snow .flake.snow1:nth-child(18) {
+    background-image: url(snowflake.png);
+    left:44% ;
+    animation-delay: 10s;
+}
+#snow .flake.snow1:nth-child(19) {
+    background-image: url(snowflake.png);
+    left:33% ;
+    animation-delay: 9s;
+}
+#snow .flake.snow1:nth-child(20) {
+    background-image: url(snowflake.png);
+    left:22% ;
+    animation-delay: 14s;
+}
+#snow .flake.snow1:nth-child(21) {
+    background-image: url(snowflake.png);
+    left:73% ;
+    animation-delay: 16s;
+}
+#snow .flake.snow1:nth-child(22) {
+    background-image: url(snowflake.png);
+    left:13% ;
+    animation-delay: 11s;
+}
+#snow .flake.snow1:nth-child(23) {
+    background-image: url(snowflake.png);
+    left:20% ;
+    animation-delay: 3s;
+}
+#snow .flake.snow1:nth-child(24) {
+    background-image: url(snowflake.png);
+    left:10% ;
+    animation-delay: 5s;
+}
+#snow .flake.snow1:nth-child(25) {
+    left:43% ;
+    animation-delay: 3s;
+}
+#snow .flake.snow1:nth-child(26) {
+    left:43% ;
+    animation-delay: 3s;
+}
+#snow .flake.snow1:nth-child(27) {
+    left:43% ;
+    animation-delay: 3s;
+}
+#snow .flake1:nth-child(28) {
+    left:2% ;
+    animation-delay: 4s;
+}
+#snow .flake1:nth-child(29) {
+    left:4% ;
+    animation-delay: 6s;
+}
+#snow .flake1:nth-child(30) {
+    left:6% ;
+    animation-delay: 8s;
+}
+#snow .flake1:nth-child(31) {
+    left:8% ;
+    animation-delay: 10s;
+}
+#snow .flake1:nth-child(32) {
+    left:10% ;
+    animation-delay: 12s;
+}
+#snow .flake1:nth-child(33) {
+    left:12% ;
+    animation-delay: 12s;
+}
+#snow .flake1:nth-child(34) {
+    left:14% ;
+    animation-delay: 10s;
+}
+#snow .flake1:nth-child(35) {
+   
+    left:16% ;
+    animation-delay: 8s;
+}
+@keyframes fall {
+    from{ top: -10%; }
+    to { top: 100%; }
+}
+.container { 
+    height: 100%;
+    display: flex;
+     align-items: center; 
+    } 
+    .sprite-image { 
+        height: 105px;
+        width: 100px;
+        background:url(https://d-nik.pro/images/stories/santa.jpg) 0px 0px;
+    transform: translateX(120px) translateY(750px);
+        animation: play 0.8s steps(6) infinite,
+        step 15s linear infinite;
+        position: absolute;
+         left: 0; 
+    } 
+        @keyframes play { 
+            100% {
+     background-position: -600px;
+        }
+    }
+    
+         @keyframes step {
+            100% {
+    left: 100%;
+    }
+}
+.block{
+    height: 90px;
+    width: 300px;
+    margin: 0 auto;
+    background: white;
+}
+.block p {
+text-align: left;
+line-height: 80px;
+color: red;
+border-color: aliceblue;
+background-color: aliceblue;
+padding-top:3px;
+transform: translateX(-40px) translateY(750px);
+animation: play 0.8s steps(6) infinite,
+step 15s linear infinite;
+position: absolute;
+ left: 0; 
+
+}
+
+
+@keyframes text { 
+    0% {
+transform: translate(-160px,0);
+}
+}
+
