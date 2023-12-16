@@ -1,0 +1,128 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    background-image:radial-gradient(#888,#222);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.carousel {
+   
+    width: 500px;
+    height: 700px;
+
+    position: relative;
+    perspective: 1000px;
+    top: 100px;
+    left: 50px;
+}
+.carousel .slide {
+    width: 500px;
+    height: 700px;
+   
+    position: absolute;
+
+    transition: transform 1s,z-index 1s 0.8s;
+   
+}
+.paper-effect>div:nth-child(1) {
+    background-image: url(image-1dio666f.png);
+   
+}
+
+
+.paper-effect>div:nth-child(2) {
+    background-image: url(image-1dio666f.png);
+   
+}
+
+
+.paper-effect>div:nth-child(3) {
+    background-image: url(image-1dio666f.png);
+}
+
+
+    .carousel .slide a{
+position: absolute;
+right: -20px;
+top: 50%;
+}
+
+.carousel .slide a::after {
+    content:url(Oxygen-Icons.org-Oxygen-Actions-go-next.24.png);
+    background-color: #fff8;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding: 3px;
+}
+.carousel .slide:nth-child(1) {
+    
+    transform: rotateY(-30deg) translateZ(-400px);
+    filter: brightness(80%);
+    opacity: 0.5;
+}
+.carousel .slide:nth-child(2) {
+    
+    transform: rotateY(-30deg) translateZ(-200px);
+    filter: brightness(90%);
+    opacity: 0.75;
+}
+
+.carousel .slide:nth-child(3) {
+    
+    transform: rotateY(-30deg) translateZ(0px);
+    
+}
+
+#state-3:target.slide:nth-child(2) {
+    transform: rotateY(-30deg) translateZ(0px);
+    z-index: 3;
+}
+
+#state-3:target.slide:nth-child(3) {
+    transform: rotateY(-30deg) translateZ(-400px);
+    z-index: 1;
+}
+
+#state-3:target.slide:nth-child(1) {
+    transform: rotateY(-30deg) translateZ(-200px);
+    z-index: 2;
+}
+
+
+
+#state-2:target.slide:nth-child(1) {
+    transform: rotateY(-30deg) translateZ(0px);
+    z-index: 3;
+}
+
+#state-2:target.slide:nth-child(3) {
+    transform: rotateY(-30deg) translateZ(-200px);
+    z-index: 2;
+}
+
+#state-2:target.slide:nth-child(2) {
+    transform: rotateY(-30deg) translateZ(-400px);
+    z-index: 1;
+}
+
+
+#state-1:target.slide:nth-child(1) {
+    transform: rotateY(-30deg) translateZ(-400px);
+    z-index: 1;
+}
+
+#state-1:target.slide:nth-child(2) {
+    transform: rotateY(-30deg) translateZ(-200px);
+    z-index: 2;
+}
+
+#state-1:target.slide:nth-child(3) {
+    transform: rotateY(-30deg) translateZ(0px);
+    z-index: 3;
+}
