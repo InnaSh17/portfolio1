@@ -1,0 +1,80 @@
+body {
+    --light-color:rgb(7, 236, 7);
+    --dark-color:rgb(127, 127, 222);
+    --text-color:white;
+   
+}
+
+body {
+
+    background-color: var(--dark-color);
+    
+}
+
+.wrap {
+
+    background: #30dc86;
+    background: linear-gradient(90deg, rgba(129 230 217 1) 0%, rgba(79 209 197 1)100%);
+    border: none;
+    border-radius: 100%;
+    box-shadow: 2px 2px 4px rgba(79,209,197,64);
+    transition: all0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 5px;
+
+}
+@keyframes ring {
+    0%{
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+    }
+    100% {
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+    }
+}
+
+
+
+#bottom-menu {
+    
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow: hidden;
+    
+}
+#bottom-menu a {
+    background-color: var(--light-color);
+    display: block;
+    padding: 0.5em;
+    margin-bottom: 0.2em;
+    border-radius: 100%;
+
+    box-shadow: 2px 0px 0px 0px rgba(0,0,0,5);
+    
+    color: var(--text-color);
+ 
+transform: translateY (
+    calc( 3* ( 2* 0.5em + 0.2em + 1em) )
+);
+
+}
+
+#bottom-menu:target a {
+    transform: translateY(0);
+   
+}
+
+#bottom-menu li:last-child a {
+    margin-bottom: 0;
+
+}
