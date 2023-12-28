@@ -97,7 +97,9 @@ body {
     border-radius: 50%;
     transform: translateX(430px)translateY(295px);
     opacity: 0.9;
-    box-shadow: 10px 10px 10px 10px rgb(0, 0, 19);
+    box-shadow: 4px 4px 8px 24px;
+    -webkit-box-shadow:4px 4px 8px 24px rgb(8, 6, 12) inset;
+    -moz-box-shadow:4px 4px 8px 24px rgb(9, 7, 11) inset ;
     height: calc( var(--size) * 0.8);
     width: calc( var(--size) * 0.8);
 }
