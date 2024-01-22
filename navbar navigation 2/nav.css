@@ -1,0 +1,67 @@
+body {
+    background: #222;
+    font-family: Arial;
+    margin: 0;
+    height: 2000px;
+
+}
+a {
+    text-decoration: none;
+}
+.navbar {
+    background-color: rgb(47, 2, 11);
+    padding: 0 10%;
+    position: relative;
+}
+.navbar a {
+    color: rgb(181, 178, 178);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1em;
+}
+.navbar a:first-child {
+    margin-right: 3em;
+    color: white;
+    font-size: 1.5em;
+}
+.navbar a:last-child {
+    display: none;
+}
+
+/*sm styles*/
+@media (max-width: 720px) {
+.navbar a {
+    display: none;
+}
+.navbar a:first-child,
+.navbar a:last-child {
+    display: inline-block;
+}
+.navbar a:first-child {
+    padding-left: 0;
+}
+.navbar a :last-child {
+    position: absolute;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    right: 10%;
+    top: .75em;
+  }
+  .navbar:target a:nth-child(2),
+  .navbar:target a:nth-child(3),
+  .navbar:target a:nth-child(4),
+  .navbar:target a:nth-child(5) 
+  {
+    display: block;
+  }
+}
+
+.about a : {
+    display: none;
+}
+ #check-skills a : .checkbox + .navbar {
+    display: block;
+}
