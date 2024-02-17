@@ -1,0 +1,33 @@
+.body {
+  background-color: #222;
+}
+
+.wrapper {
+  background: #626060;
+  width: 150px;
+  height: 340px;
+  border-radius: 10px;
+  font-size: 70px;
+  text-align: center;
+  padding: 1px 0;
+  border: 6px solid #000;
+  margin: auto;
+}
+
+.circleA, .circleB {
+  background: #444 width 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  line-height: 120px;
+}
+
+.circleA:hover {
+  background: rgb(8, 187, 8);
+}
+
+.circleB:hover {
+  background: red;
+}/*# sourceMappingURL=style.css.map */
