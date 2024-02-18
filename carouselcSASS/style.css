@@ -1,0 +1,42 @@
+body {
+  background: #224;
+}
+
+.watch {
+  width: 500px;
+  height: 500px;
+  background-color: DarkGoldenRod;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 100%;
+}
+.watch .screen {
+  width: 450px;
+  height: 450px;
+  background-color: #7e5c08;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-radius: 100%;
+}
+.watch .screen .dash {
+  width: 15px;
+  height: 2.5px;
+  background-color: #f4c040;
+  position: absolute;
+  top: 0; 
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-right: 15px;
+  transform-origin: 0px;
+  transform: rotate(180deg);
+}/*# sourceMappingURL=style.css.map */
