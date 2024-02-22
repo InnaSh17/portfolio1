@@ -1,0 +1,120 @@
+$darkColor: #222;
+$cols: 11;
+$rows: 7;
+$size: 100px;
+
+
+$tile-bg: url(images/B.jpg);
+
+@mixin center {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+}
+@mixin effectFadeOut {
+    animation: fadeOut .75s;
+    animation-delay: .1s * random(5);
+}
+
+
+body {
+background-color: $darkColor;
+
+}
+#carousel {
+    width: $cols * $size;
+    height: $rows * $size;
+    border: $size * 0.05 solid lighten($darkColor,10%);
+    @include center;
+    .slide {
+        display: grid;
+        grid-template-columns: repeat($cols, $size);
+        grid-template-rows: repeat($rows, $size);
+        text-align:center;
+        width: inherit;
+        height: inherit;
+
+        $offX: 0;
+        $offY: 0;
+
+        @for $n from 1 through $cols * $rows {
+
+            &>div:nth-child(#{$n}) {
+                background-image: url(images/A.jpg); 
+                background-position-x: $offX * - $size;
+                background-position-y: $offY * - $size;   
+                
+                @include effectFadeOut();
+                animation-fill-mode: forwards;
+            }
+            
+                 $offX: $offX + 1;
+        
+                 @if $offX % $cols == 0 {
+                     $offX: 0;
+                     $offY: $offY + 1;
+
+
+
+
+
+
+
+                
+    @for $n from 1 through 9 {
+        .slide1 {
+          
+      
+      
+              &>div:nth-child(#{$n}) {
+                  background-image: url(images/B.jpg); 
+          
+            animation-delay: $n * (1s / 18);
+          }
+        }
+      }
+      
+      @keyframes pulse {
+        0% {
+          background: $tile-bg;
+          transform: scale(1);
+        }
+        
+        25% {
+          background: darken($tile-bg, 10%);
+          transform: scale(1.015);
+        }
+        
+        50% {
+          background: $tile-bg;
+          transform: scale(1);
+        }
+      }
+      
+  
+      }
+  
+  
+      
+
+
+                 }
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+            
+        }
+    }
+
+
+
+    
+
+   
+    
+   

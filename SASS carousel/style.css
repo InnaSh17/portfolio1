@@ -1,0 +1,704 @@
+body {
+  background-color: #222;
+}
+
+#carousel {
+  width: 1100px;
+  height: 700px;
+  border: 5px solid #3c3c3c;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+#carousel .slide {
+  display: grid;
+  grid-template-columns: repeat(11, 100px);
+  grid-template-rows: repeat(7, 100px);
+  text-align: center;
+  width: inherit;
+  height: inherit;
+}
+#carousel .slide > div:nth-child(1) {
+  background-image: url(images/A.jpg);
+  background-position-x: 0px;
+  background-position-y: 0px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(2) {
+  background-image: url(images/A.jpg);
+  background-position-x: -100px;
+  background-position-y: 0px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(3) {
+  background-image: url(images/A.jpg);
+  background-position-x: -200px;
+  background-position-y: 0px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(4) {
+  background-image: url(images/A.jpg);
+  background-position-x: -300px;
+  background-position-y: 0px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(5) {
+  background-image: url(images/A.jpg);
+  background-position-x: -400px;
+  background-position-y: 0px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(6) {
+  background-image: url(images/A.jpg);
+  background-position-x: -500px;
+  background-position-y: 0px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(7) {
+  background-image: url(images/A.jpg);
+  background-position-x: -600px;
+  background-position-y: 0px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(8) {
+  background-image: url(images/A.jpg);
+  background-position-x: -700px;
+  background-position-y: 0px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(9) {
+  background-image: url(images/A.jpg);
+  background-position-x: -800px;
+  background-position-y: 0px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(10) {
+  background-image: url(images/A.jpg);
+  background-position-x: -900px;
+  background-position-y: 0px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(11) {
+  background-image: url(images/A.jpg);
+  background-position-x: -1000px;
+  background-position-y: 0px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(12) {
+  background-image: url(images/A.jpg);
+  background-position-x: 0px;
+  background-position-y: -100px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(13) {
+  background-image: url(images/A.jpg);
+  background-position-x: -100px;
+  background-position-y: -100px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(14) {
+  background-image: url(images/A.jpg);
+  background-position-x: -200px;
+  background-position-y: -100px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(15) {
+  background-image: url(images/A.jpg);
+  background-position-x: -300px;
+  background-position-y: -100px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(16) {
+  background-image: url(images/A.jpg);
+  background-position-x: -400px;
+  background-position-y: -100px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(17) {
+  background-image: url(images/A.jpg);
+  background-position-x: -500px;
+  background-position-y: -100px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(18) {
+  background-image: url(images/A.jpg);
+  background-position-x: -600px;
+  background-position-y: -100px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(19) {
+  background-image: url(images/A.jpg);
+  background-position-x: -700px;
+  background-position-y: -100px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(20) {
+  background-image: url(images/A.jpg);
+  background-position-x: -800px;
+  background-position-y: -100px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(21) {
+  background-image: url(images/A.jpg);
+  background-position-x: -900px;
+  background-position-y: -100px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(22) {
+  background-image: url(images/A.jpg);
+  background-position-x: -1000px;
+  background-position-y: -100px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(23) {
+  background-image: url(images/A.jpg);
+  background-position-x: 0px;
+  background-position-y: -200px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(24) {
+  background-image: url(images/A.jpg);
+  background-position-x: -100px;
+  background-position-y: -200px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(25) {
+  background-image: url(images/A.jpg);
+  background-position-x: -200px;
+  background-position-y: -200px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(26) {
+  background-image: url(images/A.jpg);
+  background-position-x: -300px;
+  background-position-y: -200px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(27) {
+  background-image: url(images/A.jpg);
+  background-position-x: -400px;
+  background-position-y: -200px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(28) {
+  background-image: url(images/A.jpg);
+  background-position-x: -500px;
+  background-position-y: -200px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(29) {
+  background-image: url(images/A.jpg);
+  background-position-x: -600px;
+  background-position-y: -200px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(30) {
+  background-image: url(images/A.jpg);
+  background-position-x: -700px;
+  background-position-y: -200px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(31) {
+  background-image: url(images/A.jpg);
+  background-position-x: -800px;
+  background-position-y: -200px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(32) {
+  background-image: url(images/A.jpg);
+  background-position-x: -900px;
+  background-position-y: -200px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(33) {
+  background-image: url(images/A.jpg);
+  background-position-x: -1000px;
+  background-position-y: -200px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(34) {
+  background-image: url(images/A.jpg);
+  background-position-x: 0px;
+  background-position-y: -300px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(35) {
+  background-image: url(images/A.jpg);
+  background-position-x: -100px;
+  background-position-y: -300px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(36) {
+  background-image: url(images/A.jpg);
+  background-position-x: -200px;
+  background-position-y: -300px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(37) {
+  background-image: url(images/A.jpg);
+  background-position-x: -300px;
+  background-position-y: -300px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(38) {
+  background-image: url(images/A.jpg);
+  background-position-x: -400px;
+  background-position-y: -300px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(39) {
+  background-image: url(images/A.jpg);
+  background-position-x: -500px;
+  background-position-y: -300px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(40) {
+  background-image: url(images/A.jpg);
+  background-position-x: -600px;
+  background-position-y: -300px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(41) {
+  background-image: url(images/A.jpg);
+  background-position-x: -700px;
+  background-position-y: -300px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(42) {
+  background-image: url(images/A.jpg);
+  background-position-x: -800px;
+  background-position-y: -300px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(43) {
+  background-image: url(images/A.jpg);
+  background-position-x: -900px;
+  background-position-y: -300px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(44) {
+  background-image: url(images/A.jpg);
+  background-position-x: -1000px;
+  background-position-y: -300px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(45) {
+  background-image: url(images/A.jpg);
+  background-position-x: 0px;
+  background-position-y: -400px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(46) {
+  background-image: url(images/A.jpg);
+  background-position-x: -100px;
+  background-position-y: -400px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(47) {
+  background-image: url(images/A.jpg);
+  background-position-x: -200px;
+  background-position-y: -400px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(48) {
+  background-image: url(images/A.jpg);
+  background-position-x: -300px;
+  background-position-y: -400px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(49) {
+  background-image: url(images/A.jpg);
+  background-position-x: -400px;
+  background-position-y: -400px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(50) {
+  background-image: url(images/A.jpg);
+  background-position-x: -500px;
+  background-position-y: -400px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(51) {
+  background-image: url(images/A.jpg);
+  background-position-x: -600px;
+  background-position-y: -400px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(52) {
+  background-image: url(images/A.jpg);
+  background-position-x: -700px;
+  background-position-y: -400px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(53) {
+  background-image: url(images/A.jpg);
+  background-position-x: -800px;
+  background-position-y: -400px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(54) {
+  background-image: url(images/A.jpg);
+  background-position-x: -900px;
+  background-position-y: -400px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(55) {
+  background-image: url(images/A.jpg);
+  background-position-x: -1000px;
+  background-position-y: -400px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(56) {
+  background-image: url(images/A.jpg);
+  background-position-x: 0px;
+  background-position-y: -500px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(57) {
+  background-image: url(images/A.jpg);
+  background-position-x: -100px;
+  background-position-y: -500px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(58) {
+  background-image: url(images/A.jpg);
+  background-position-x: -200px;
+  background-position-y: -500px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(59) {
+  background-image: url(images/A.jpg);
+  background-position-x: -300px;
+  background-position-y: -500px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(60) {
+  background-image: url(images/A.jpg);
+  background-position-x: -400px;
+  background-position-y: -500px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(61) {
+  background-image: url(images/A.jpg);
+  background-position-x: -500px;
+  background-position-y: -500px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(62) {
+  background-image: url(images/A.jpg);
+  background-position-x: -600px;
+  background-position-y: -500px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(63) {
+  background-image: url(images/A.jpg);
+  background-position-x: -700px;
+  background-position-y: -500px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(64) {
+  background-image: url(images/A.jpg);
+  background-position-x: -800px;
+  background-position-y: -500px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(65) {
+  background-image: url(images/A.jpg);
+  background-position-x: -900px;
+  background-position-y: -500px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(66) {
+  background-image: url(images/A.jpg);
+  background-position-x: -1000px;
+  background-position-y: -500px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(67) {
+  background-image: url(images/A.jpg);
+  background-position-x: 0px;
+  background-position-y: -600px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(68) {
+  background-image: url(images/A.jpg);
+  background-position-x: -100px;
+  background-position-y: -600px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(69) {
+  background-image: url(images/A.jpg);
+  background-position-x: -200px;
+  background-position-y: -600px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(70) {
+  background-image: url(images/A.jpg);
+  background-position-x: -300px;
+  background-position-y: -600px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(71) {
+  background-image: url(images/A.jpg);
+  background-position-x: -400px;
+  background-position-y: -600px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(72) {
+  background-image: url(images/A.jpg);
+  background-position-x: -500px;
+  background-position-y: -600px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(73) {
+  background-image: url(images/A.jpg);
+  background-position-x: -600px;
+  background-position-y: -600px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(74) {
+  background-image: url(images/A.jpg);
+  background-position-x: -700px;
+  background-position-y: -600px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(75) {
+  background-image: url(images/A.jpg);
+  background-position-x: -800px;
+  background-position-y: -600px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(76) {
+  background-image: url(images/A.jpg);
+  background-position-x: -900px;
+  background-position-y: -600px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+#carousel .slide > div:nth-child(77) {
+  background-image: url(images/A.jpg);
+  background-position-x: -1000px;
+  background-position-y: -600px;
+  animation: fadeOut 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+#carousel .tiles {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 330px;
+}
+#carousel .tile {
+  animation: 1s ease 0s pulse infinite;
+  background: #cfcfdf;
+  border-radius: 4px;
+  float: left;
+  height: 75px;
+  margin: 5px;
+  width: 100px;
+}
+#carousel .tile:nth-child(1) {
+  animation-delay: 0.0555555556s;
+}
+#carousel .tile:nth-child(2) {
+  animation-delay: 0.1111111111s;
+}
+#carousel .tile:nth-child(3) {
+  animation-delay: 0.1666666667s;
+}
+#carousel .tile:nth-child(4) {
+  animation-delay: 0.2222222222s;
+}
+#carousel .tile:nth-child(5) {
+  animation-delay: 0.2777777778s;
+}
+#carousel .tile:nth-child(6) {
+  animation-delay: 0.3333333333s;
+}
+#carousel .tile:nth-child(7) {
+  animation-delay: 0.3888888889s;
+}
+#carousel .tile:nth-child(8) {
+  animation-delay: 0.4444444444s;
+}
+#carousel .tile:nth-child(9) {
+  animation-delay: 0.5s;
+}
+@keyframes pulse {
+  0% {
+    background: #cfcfdf;
+    transform: scale(1);
+  }
+  25% {
+    background: #b0b0cb;
+    transform: scale(1.015);
+  }
+  50% {
+    background: #cfcfdf;
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=style.css.map */
