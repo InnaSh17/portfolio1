@@ -1,0 +1,56 @@
+body {
+    background-color: whitesmoke;
+
+}
+
+.container {
+    margin: 10%;
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(215, 104, 237, 0.217);
+    background-color: rgba(194, 131, 217, 0.371);
+    border-radius: 100%;
+
+} 
+.phone {
+    width: 100%!important;
+}
+img {
+    transform: translateY(-15%);
+    width: 50%;
+    height: 160%;
+    position: relative;
+    border-style: none;
+    vertical-align: middle;
+    z-index: 1;    
+}
+
+.bg-rays {
+    position: relative;
+&>div {
+    background-color: rgb(90, 6, 123);
+    
+    height: 2px;
+    position: absolute;
+    transform-origin: right 50%;
+  top: 50%;
+  &::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: rgb(176, 22, 232);
+    transform: translateY(-3px);
+    border-radius: 100%;
+  }
+@for $n from 1 through 40 {
+  &:nth-child(#{$n}) {
+    $left: random() * 10%;
+    transform: rotate($n * 0.05turn + random() * 0.07turn);
+    width: 50% - $left;
+    left: $left;
+
+}  
+}
+}  
+}
