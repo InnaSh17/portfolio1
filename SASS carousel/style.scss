@@ -3,9 +3,6 @@ $cols: 11;
 $rows: 7;
 $size: 100px;
 
-
-$tile-bg: url(images/B.jpg);
-
 @mixin center {
     position: absolute;
     top: 0;
@@ -65,11 +62,19 @@ background-color: $darkColor;
 
 
                 
-    @for $n from 1 through 9 {
-        .slide1 {
-          
-      
-      
+    
+        .slide1 {  
+          display: grid;
+          grid-template-columns: repeat($cols, $size);
+          grid-template-rows: repeat($rows, $size);
+          text-align:center;
+          width: inherit;
+          height: inherit;
+  
+          $offX: 0;
+          $offY: 0;
+  
+          @for $n from 1 through $cols * $rows {
               &>div:nth-child(#{$n}) {
                   background-image: url(images/B.jpg); 
           
@@ -80,37 +85,30 @@ background-color: $darkColor;
       
       @keyframes pulse {
         0% {
-          background: $tile-bg;
+          background: url(images/B.jpg);
           transform: scale(1);
         }
         
         25% {
-          background: $tile-bg, 10%;
+          background: url(images/B.jpg), 10%;
           transform: scale(1.015);
         }
         
         50% {
-          background: $tile-bg;
+          background: url(images/B.jpg);
           transform: scale(1);
         }
       }
-      
-  
-      }
-  
-  
-      
-
-
-                 }
-        }
-        @keyframes fadeOut {
-            from { opacity: 1; }
-            to { opacity: 0; }
-            
-        }
+       
+      @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; }
     }
-
+      }
+    }
+  
+}
+}
 
 
     
