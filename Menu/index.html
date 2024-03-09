@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>Restaurant | JS</title>
+  <style>body {
+    background-color: #333;
+    color: white;
+    }
+    ul {
+        list-style: none;
+        }
+        ul img {
+            width: 200px;
+        }
+        ul li {
+            border-bottom: 1px solid#666;
+        }
+</style>
+</head>
+<body>
+    <ul>
+        <li>
+            <h2 id="item1_h2">Pizza</h2>
+            <img id="item1_img" src="img/pizza.jpg" alt="pizza">
+            <p id="item1_p">100MDL</p>
+            <button id="item1_button"
+            onclick="
+            let quantity1 = +prompt('How many ?')
+            let item1_cost = quantity1 * product1_price_amount
+            total_cost_amount +=item1_cost
+            if (quantity1 >= 5) {
+                total_cost_amount -= product1_price_amount
+            }
+            order_summary.innerHTML = 'Order Total: ' + total_cost + total_cost_currency
+            "
+            >ORDER</button>
+        </li>
+        <li>
+            <h2 id="item2_h2">Djuice</h2>
+            <img id="item2_img" src="img/djuice.jpg" alt="djuice">
+            <p id="item2_p">25MDL</p>
+            <button id="item2_button"
+            onclick="
+            let quantity2 = +prompt('How many ?')
+            let item2_cost = quantity2 * product2_price_amount
+            total_cost_amount +=item2_cost
+
+            if (quantity1 >= 5) {
+                total_cost_amount -= product2_price_amount
+            }
+
+            order_summary.innerHTML = 'Order Total: ' + total_cost + total_cost_currency            
+            "
+            >ORDER</button>
+        </li>
+    </ul>
+    <div>
+        <input id="delivery_checkbox" type="checkbox"
+        onclick="
+
+        if (delivery_checkbox.checked) {
+            total_cost_amount += delivery_cost_amount
+        } else {
+            total_cost_amount -= delivery_cost_amount
+        }
+        
+
+        total_cost_amount += delivery_cost_amount
+        order_summary.innerHTML = 'Order Total: ' + total_cost + total_cost_currency            
+          
+        "
+        > widthDelivery
+    </div>
+    <div id="order_summary">
+
+    </div>
+    
+        <button id="cancel_button"
+        onclick="
+        let quantity = +prompt('Cancel ?')
+        let item_cancel = yes +- no
+            
+            if (quantity1 >= yes) {
+                total_cost_amount = 0
+            }
+
+            order_summary.innerHTML = 0     
+        "
+            >
+        
+
+        </button>
+
+
+    <script>
+        let total_cost_amount = 0
+        let total_cost_currency = "MDL"
+        let delivery_cost_amount = 50
+        let delivery_cost_currency = "MDL"
+
+        let product1_name = "Pizza"
+        let product1_img = "img/pizza.jpg"
+        let product1_price_amount = 100
+        let product1_price_currency = "MDL"
+
+        let product2_name = "Djuice"
+        let product2_img = "img/djuice.jpg"
+        let product2_price_amount = 25
+        let product2_price_currency = "MDL"
+
+
+        item1_h2.innerHTML = product1_name
+        item1_img.src = product1_img
+        item1_p = product1_price_amout
+        item1_button = product1_price_currency
+
+        item2_h2.innerHTML = product2_name
+        item2_img.src = product2_img
+        item2_p = product2_price_amout
+        item2_button = product2_price_currency
+        item_cancel = 0
+
+    </script>
+    
+</body>
+</html>
